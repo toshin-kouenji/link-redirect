@@ -1,0 +1,7 @@
+$ cd YOUR_GITHUB_REPO/ROOT_OF_GITHUB_PAGES/
+$ cat << _EOT_ > foo/bar.html
+---
+redirect_to: "https://example.jp/dest.html"
+---
+_EOT_
+$ git add . && git commit -m "Redirect" && git push
